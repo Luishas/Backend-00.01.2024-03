@@ -1,4 +1,4 @@
-let boton1 = document.getElementById("tercerBoton");
+let boton1 = document.getElementById("btnTercerBoton");
         boton1.addEventListener("click",function(){
-            alert('Hola desde el otro boton')
+            alert("Hola desde el tercer boton")
         });
