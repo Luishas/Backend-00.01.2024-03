@@ -1,6 +1,6 @@
 Proceso Suma_Impares
 	
-	// 23.	Hacer un algoritmo en Pseint para calcular la suma de los números impares menores o iguales a n
+	// 23.	Hacer un algoritmo en Pseint para calcular la suma de los nï¿½meros impares menores o iguales a n
 	Escribir "**************************"
 	Escribir "*  Suma numeros impares  *"  
 	Escribir "**************************"
