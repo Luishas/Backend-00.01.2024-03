@@ -7,7 +7,7 @@
 // console.log(resultado);
 // console.log(sumar(22,99));
 
-// function hanoi(numero_discos, inicio, fin){
+function hanoi(numero_discos, inicio, fin){
     
     if(numero_discos>0)
     {
