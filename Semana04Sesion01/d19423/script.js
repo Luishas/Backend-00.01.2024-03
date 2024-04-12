@@ -45,7 +45,7 @@ ejemplo("Hola");
   // 3. Suprime los paréntesis de los argumentos
   a => a + 100;
 
-  document.getElementById("miBoton").addEventListener("click",e =>{
+  /*document.getElementById("miBoton").addEventListener("click",e =>{
     e.preventDefault();
     console.log("El cliente hizo click")
   })
@@ -55,7 +55,7 @@ ejemplo("Hola");
   function ClickMe(e){
     e.preventDefault();
     console.log("El cliente hizo click")
-  }
+  }*/
 
 
 let objCarro={
@@ -72,7 +72,11 @@ console.log(objCarro.acelerar())
 
 
 let arrClientes =[];
+let arrDespachos =[];
+let $table = $('#table');
+let $tableDespachos = $('#tableDespachos');
 const Heladeria = function () //a
+
 {
     let Nombre;
     let Direccion;
