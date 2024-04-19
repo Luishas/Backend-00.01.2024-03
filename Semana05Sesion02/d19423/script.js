@@ -54,10 +54,10 @@ const Reserva = function () //a
             denyButtonText: `Cancelar`,
             preConfirm: () => {
                 return {
-                    origen:  document.getElementById("origen").value,
-                    destino: document.getElementById("destino").value,
-                    fechaIda:  document.getElementById("fechaIda").value,
-                    fechaRegreso:  document.getElementById("fechaRetorno").value
+                 origen:  document.getElementById("origen").value,
+                 destino: document.getElementById("destino").value,
+                 fechaIda:  document.getElementById("fechaIda").value,
+                fechaRegreso:  document.getElementById("fechaRetorno").value
                 };
             }
         });
@@ -150,7 +150,7 @@ class Aviones {
         this.reservado = 0
     }
     agregarPasajeros(pasajero) {
-        if (this.reservado >= this.capacidadMinima) {
+        if (this.reservado >= this.capacidad_minima) {
             this.habilitado = true;
         }
         this.arrPasajeros.push(pasajero);
