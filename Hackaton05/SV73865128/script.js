@@ -23,7 +23,7 @@ class Reparacion{
     }
 
     autorizarReparacion(){
-        if(this.telefono.autorizacion && this.telefono.abono === this.calcularAbonoInicial){
+        if(this.telefono.autorizacion && this.telefono.abono === this.calcularAbonoInicial()){
             this.estado = 'En reparacion'
         } else{
             console.log('La autorizacion y/o abono son diferentes')
@@ -31,7 +31,7 @@ class Reparacion{
     }
 
     calcularAbonoInicial(){
-        return 0.5 * this.tecnico.calcularTotal(this.telefono);
+        return 0.5 * this.tecnico.calcularReparacion(this.telefono);
     }
 }
 
@@ -45,7 +45,7 @@ class Tecnico{
         return this.skils.includes(marca)
     }
 
-    calcularTotal(telefono){
+    calcularReparacion(telefono){
         let costoBase = 100;
         let costoMarca = telefono.marca === 'Iphone' ? 50 : 0;
         return costoBase*costoMarca;
@@ -62,11 +62,8 @@ if (tecnico1.puedeReparar(telefono1.marca)){
     const repuestos = ['pantalla','bateria']
     const reparacion1 = new Reparacion(telefono1,tecnico1,repuestos)
 
-    // console.log(reparacion1);
-    console.log(telefono1.abono);
-
     telefono1.autorizacion = true;
-    telefono1.abono = 50
-    tecnico1 = calcularTotal();
+    tecnico1.calcularReparacion(telefono1);
     reparacion1.autorizarReparacion();
+    console.log(reparacion1)
 }
